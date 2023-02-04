@@ -15,13 +15,13 @@ WHERE Id = @AlexUserGameId
 
 SELECT u.Username [Username], g.Name AS [Name], ug.Cash [Cash], i.Name AS [Item name]
 FROM Users AS u
-INNER JOIN UsersGames AS ug
+JOIN UsersGames AS ug
 ON ug.UserId = u.Id
-INNER JOIN Games AS g
+JOIN Games AS g
 ON g.Id = ug.GameId
-INNER JOIN UserGameItems AS ugi
+JOIN UserGameItems AS ugi
 ON ugi.UserGameId = ug.Id
-INNER JOIN Items AS i
+JOIN Items AS i
 ON i.Id = ugi.ItemId
 WHERE ug.GameId = @AlexGameId
 ORDER BY [Item name]
