@@ -1,4 +1,4 @@
-CREATE FUNCTION ufn_IsWordComprised (@setOfLetters VARCHAR(50), @word VARCHAR(50))
+CREATE FUNCTION ufn_IsWordComprised(@setOfLetters VARCHAR(100), @word VARCHAR(100))
 RETURNS BIT
 AS
 BEGIN

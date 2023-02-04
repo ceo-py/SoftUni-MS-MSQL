@@ -1,4 +1,4 @@
-CREATE PROCEDURE usp_GetTownsStartingWith (@StartWith VARCHAR(50))
+CREATE PROCEDURE usp_GetTownsStartingWith(@StartWith VARCHAR(50))
 AS
 BEGIN
 SELECT Name AS Town

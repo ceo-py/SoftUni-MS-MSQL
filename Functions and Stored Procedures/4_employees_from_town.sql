@@ -1,4 +1,4 @@
-CREATE PROCEDURE usp_GetEmployeesFromTown (@LfTown VARCHAR(50))
+CREATE PROCEDURE usp_GetEmployeesFromTown(@LfTown VARCHAR(50))
 AS
 BEGIN
 SELECT FirstName AS 'First Name',LastName AS 'Last Name'

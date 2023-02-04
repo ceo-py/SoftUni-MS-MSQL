@@ -1,4 +1,4 @@
-CREATE PROCEDURE usp_EmployeesBySalaryLevel (@Level VARCHAR(7))
+CREATE PROCEDURE usp_EmployeesBySalaryLevel(@Level VARCHAR(7))
 AS
 BEGIN
     SELECT FirstName, LastName
